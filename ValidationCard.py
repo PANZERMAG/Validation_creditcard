@@ -1,8 +1,8 @@
 import requests
 
 
-class Main:
-    def __int__(self, card_number, exp_month, exp_year):
+class ValidateCard:
+    def __init__(self, card_number: str, exp_month: str, exp_year: str):
         self.card_number = card_number
         self.exp_month = exp_month
         self.exp_year = exp_year
@@ -83,5 +83,3 @@ class Main:
         self._get_status()
 
         return {'status': self.status}
-
-
